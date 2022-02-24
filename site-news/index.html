@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/newspage.css">
+    <link rel="stylesheet" href="css/addnewspage.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <label for="color"></label>
+        <div class="container">
+            <div class="header__inner">
+                <nav class="menu">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+                    </a>
+                    <ul class="menu__list" id="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--active" id="news" href="#">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="finance" href="#">Финансы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="realestate" href="#">Недвижимость</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="sport" href="#">Спорт</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="movies" href="#">Афиша</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="shops" href="#">Магазины</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="job" href="#">Работа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="tv" href="#">ТВ-программа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="mail" href="#">Почта</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" id="weather" href="#">Погода</a>
+                        </li>
+                    </ul>
+
+                    <div class="menu__user">
+                        <div class="menu__search">
+                            <input class="menu__input" type="text" id="menu__input">
+                            <button class="menu__btn" type="button" id="menu__btn">
+                                <svg class="menu__search-btn" width="17" height="18">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M11.763 10.197a6.393 6.393 0 10-1.966 1.81l4.714 4.686a1.338 1.338 0 101.891-1.891l-4.639-4.605zm-5.221.437a4.124 4.124 0 11-.008-8.247 4.124 4.124 0 01.01 8.247h-.002z"></path>
+                                    </g>
+                                    <clippath id="clip0">
+                                        <path fill="#fff" transform="translate(0 .11)" d="M0 0h17v17H0z"></path>
+                                    </clippath>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="menu__user-link menu__user-link--img" href="#">
+                            <span class="sr-only">открыть профиль</span>
+                        </a>
+                        <a class="menu__user-link" href="#" id="menu__user-link">
+                            <svg class="menu__add" width="14" height="15">
+                                <path d="M0 6.1094h14v2H0z"></path>
+                                <path d="M8 .1094v14H6v-14z"></path>
+                            </svg>
+                            <span class="sr-only">добавить новость</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main main--page">
+        <div class="container">
+            <div class="main__inner">
+                <section class="news">
+                    <ul class="news__list" id="news__list">
+                        <li class="news__item" style="display: none;">
+                            <a class="news__link" href="#">
+                                <img class="news__img" src="images/img/news-img1.jpg" alt="фото новости">
+                            </a>
+                            <div class="news__info">
+                                <span class="tag tag--realestate">недвижимость</span>
+                                <div class="statistic">
+                                    <span class="statistic__item news__item--likes">
+                                        1.5 тыс
+                                    </span>
+                                    <span class="statistic__item  statistic__item--comments">
+                                        11.5 тыс
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="news__title">
+                                Требониан Галл происходил из старинного этрусского рода. В конце правления императора Деция Траяна он занимал должность легата
+                            </div>
+                            <div class="news__text">
+                                Будущий император Гай Вибий Требониан Галл родился около 206 года.
+                                Эта датировка основана на сообщении Псевдо-Аврелия Виктора, который в своей «Эпитоме» пишет, что на момент смерти Гаю было примерно сорок семь лет.
+                            </div>
+                        </li>
+                        <li class="news__item">
+                            <a class="news__link" href="#">
+                                <img class="news__img" src="images/img/news-img2.jpg" alt="фото новости">
+                            </a>
+                            <div class="news__info">
+                                <span class="tag tag--finance">финансы</span>
+                                <div class="statistic">
+                                    <span class="statistic__item news__item--likes">
+                                        <span class="sr-only">поставить лайк</span>
+                                        1.5 тыс
+                                    </span>
+                                    <span class="statistic__item  statistic__item--comments">
+                                        <span class="sr-only">поставить лайк</span>
+                                        11.5 тыс
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="news__title">
+                                Мининформ приостанавливает статус СМИ для TUT.BY на три месяца с 1 октября
+                            </div>
+                            <div class="news__text">
+                                Приказом министра информации Игоря Луцкого от 29 сентября, который получила редакция, для TUT.BY приостановлена возможность использовать с 1 октября 2020 года статус сетевого издания.
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="hot-news">
+                    <h2 class="title">Горячее</h2>
+                    <ul class="hot-news__list" id="hot-news__list">
+                        <li class="hot-news__item" style="display: none;">
+                            <a class="hot-news__link" href="">
+                                <img class="hot-news__img" src="images/img/hot-news-img1.jpg" alt="фото новой новоcти">
+                            </a>
+                            <span class="tag tag--sport hot-news__tag">Спорт</span>
+                            <div class="hot-news__text">
+                                Проглотившая слона змея стала классикой за 2000 лет до «Маленького принца».
+                            </div>
+                            <div class="statistic">
+                                <span class="statistic__item hot-news__like">
+                                    <span class="sr-only">поставить лайк</span>
+                                    1.5 тыс
+                                </span>
+                                <span class="statistic__item  statistic__item--comments">
+                                    <span class="sr-only">поставить лайк</span>
+                                    11.5 тыс
+                                </span>
+                            </div>
+                        </li>
+                        <li class="hot-news__item">
+                            <a class="hot-news__link" href="">
+                                <img class="hot-news__img" src="images/img/hot-news-img2.jpg" alt="фото новой новоcти">
+                            </a>
+                            <span class="tag tag--finance hot-news__tag">Финансы</span>
+                            <div class="hot-news__text">
+                                Проглотившая слона змея стала классикой за 2000 лет до «Маленького принца».
+                            </div>
+                            <div class="statistic">
+                                <span class="statistic__item hot-news__like">
+                                    <span class="sr-only">поставить лайк</span>
+                                    1.5 тыс
+                                </span>
+                                <span class="statistic__item  statistic__item--comments">
+                                    <span class="sr-only">поставить лайк</span>
+                                    11.5 тыс
+                                </span>
+                            </div>
+                        </li>
+                        <li class="hot-news__item">
+                            <a class="hot-news__link" href="">
+                                <img class="hot-news__img" src="images/img/hot-news-img3.jpg" alt="фото новой новоcти">
+                            </a>
+                            <span class="tag tag--poster hot-news__tag">Афиша</span>
+                            <div class="hot-news__text">
+                                Проглотившая слона змея стала классикой за 2000 лет
+                            </div>
+                            <div class="statistic">
+                                <span class="statistic__item hot-news__like">
+                                    <span class="sr-only">поставить лайк</span>
+                                    1.5 тыс
+                                </span>
+                                <span class="statistic__item  statistic__item--comments">
+                                    <span class="sr-only">поставить лайк</span>
+                                    11.5 тыс
+                                </span>
+                            </div>
+                        </li>
+                        <li class="hot-news__item">
+                            <a class="hot-news__link" href="">
+                                <img class="hot-news__img" src="images/img/hot-news-img4.jpg" alt="фото новой новоcти">
+                            </a>
+                            <span class="tag tag--sport hot-news__tag">Спорт</span>
+                            <div class="hot-news__text">
+                                Хоккейный клуб «Тампа-Бэй Лайтнинг» (на фото) второй раз в истории завоевал Кубок Стэнли, обыграв в финале «Даллас Старз»
+                            </div>
+                            <div class="statistic">
+                                <span class="statistic__item hot-news__like">
+                                    <span class="sr-only">поставить лайк</span>
+                                    1.5 тыс
+                                </span>
+                                <span class="statistic__item  statistic__item--comments">
+                                    <span class="sr-only">поставить лайк</span>
+                                    11.5 тыс
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="last-news" id="last-news">
+                    <h2 class="title">Последние новости</h2>
+                    <ul class="last-news__list" id="last-news__list">
+                        <li class="last-news__item" style="display: none;">
+                            В Сети появился список, где в Минске устанавливают видеокамеры для наблюдения за улицей
+                        </li>
+                        <li class="last-news__item">
+                            МИД Беларуси объявил об ответных санкциях в отношении стран Балтии
+
+                        </li>
+                        <li class="last-news__item">
+                            Индийский струнный барабан оказался вовсе не барабаном
+                        </li>
+                        <li class="last-news__item">
+                            Киевский депутат получил ранение во время чистки оружия
+                        </li>
+                        <li class="last-news__item">
+                            Российские декабристы послужили живым примером для грузинских
+                        </li>
+                        <li class="last-news__item">
+                            Отрицательный персонаж шекспировской комедии предлагает положительным освободить их рабов
+                        </li>
+                        <li class="last-news__item">
+                            Последний рассказ смертельно больного Тургенева был надиктован им на смеси французского с немецким и итальянским
+                        </li>
+                        <li class="last-news__item">
+                            Православный филолог вступил в компартию, когда та повернулась лицом к церкви
+                        </li>
+                        <li class="last-news__item">
+                            Будущий премьер-министр отсидел четыре месяца и шестнадцать дней за оскорбление президента
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <main class="main news--page" style="display: none;">
+        <div class="container">
+            <div class="main__inner--onenews">
+                <div class="edit">
+                    <span class="edit__item edit__item--likes">
+                        <span class="sr-only">количество лайков</span>
+                        1,5 тыс
+                    </span>
+                    <span class="edit__item edit__item--comments">
+                        <span class="sr-only">количество комментариев</span>
+                        11,5 тыс
+                    </span>
+                    <span class="edit__item edit__item--edit">
+                        <span class="sr-only">редактировать новость</span>
+                    </span>
+                </div>
+                <section class="onenews">
+                    <div class="onenews__inner">
+                        <span class="tag tag--finance onenews__tag">финансы</span>
+                        <h2 class="onenews__title">
+                            Мининформ приостанавливает статус СМИ для TUT.BY на три месяца с 1 октября
+                        </h2>
+                        <img class="onenews__img" src="images/img/onenews.jpg" alt="фото новости">
+                        <div class="onenews__content">
+                            <p class="onenews__text">
+                                По приказу министра, с 1 октября TUT.BY утратит статус СМИ. При этом мы по-прежнему будем работать как интернет-ресурс без статуса СМИ.
+                            </p>
+                            <p class="onenews__text">
+                                Напомним, что регистрация интернет-ресурсов в качестве сетевых изданий в Беларуси носит добровольный характер. Статус СМИ дает некоторые преимущества, в частности возможность на законных основаниях присутствовать в порядке, определенном законодательством Республики Беларусь, в районах вооруженных конфликтов или чрезвычайных ситуаций, на массовых мероприятиях, в местах других общественно важных событий и передавать оттуда информацию. Однако TUT.BY был зарегистрирован как СМИ лишь в январе 2019 года, до этого — с момента основания в 2000 году — портал работал без этого статуса.
+                            </p>
+                            <p class="onenews__text">
+                                По приказу министра, с 1 октября TUT.BY утратит статус СМИ. При этом мы по-прежнему будем работать как интернет-ресурс без статуса СМИ.
+                            </p>
+                            <p class="onenews__text">
+                                Напомним, что регистрация интернет-ресурсов в качестве сетевых изданий в Беларуси носит добровольный характер. Статус СМИ дает некоторые преимущества, в частности возможность на законных основаниях присутствовать в порядке, определенном законодательством Республики Беларусь, в районах вооруженных конфликтов или чрезвычайных ситуаций, на массовых мероприятиях, в местах других общественно важных событий и передавать оттуда информацию. Однако TUT.BY был зарегистрирован как СМИ лишь в январе 2019 года, до этого — с момента основания в 2000 году — портал работал без этого статуса.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="last-news">
+                    <h2 class="title">Последние новости</h2>
+                    <ul class="last-news__list" id="last-news__container--newspage">
+                        <li class="last-news__item" style="display: none;">
+                            <div class="last-news__text">
+                                В Сети появился список, где в Минске устанавливают видеокамеры для наблюдения за улицей
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                МИД Беларуси объявил об ответных санкциях в отношении стран Балтии
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                Индийский струнный барабан оказался вовсе не барабаном
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                Киевский депутат получил ранение во время чистки оружия
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                Российские декабристы послужили живым примером для грузинских
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                Отрицательный персонаж шекспировской комедии предлагает положительным освободить их рабов
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                Последний рассказ смертельно больного Тургенева был надиктован им на смеси французского с немецким и итальянским
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                Православный филолог вступил в компартию, когда та повернулась лицом к церкви
+                            </div>
+                        </li>
+                        <li class="last-news__item">
+                            <div class="last-news__text">
+                                Будущий премьер-министр отсидел четыре месяца и шестнадцать дней за оскорбление президента
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <main class="main add--page" style="display: none;">
+        <div class="container">
+            <section class="addnews">
+                <form class="addnews__form" action="">
+                    <div class="addnews__tags">
+                        <span class="addnews__category">Категория:</span>
+                        <select class="addnews__list" name="" id="">
+                            <option class="addnews__item" value="" selected disabled>Новости</option>
+                            <option class="addnews__item" value="realestate">Недвижимость</option>
+                            <option class="addnews__item" value="sport">Спорт</option>
+                            <option class="addnews__item" value="movies">Афиша</option>
+                            <option class="addnews__item" value="shops">Магазины</option>
+                            <option class="addnews__item" value="job">Работа</option>
+                            <option class="addnews__item" value="tv">ТВ-программа</option>
+                            <option class="addnews__item" value="mail">Почта</option>
+                            <option class="addnews__item" value="weather">Погода</option>
+                            <option class="addnews__item" value="finance">Финансы</option>
+                        </select>
+                    </div>
+                    <input class="addnews__title" type="text" placeholder="Текст заголовка">
+                    <input class="addnews__img" type="file" id="file">
+                    <label class="addnews__add" for="file"></label>
+                    <div class="addnews__content" contenteditable="true" data-text="Основной текст новости"></div>
+                    <div class="savenews">
+                        <button class="savenews__btn savenews__btn--cancel" type="button">Отмена</button>
+                        <button class="savenews__btn savenews__btn--accept" type="submit">Сохранить новоcть</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="js/backend.js" type="module"></script>
+    <script src="js/header.js" type="module"></script>
+    <script src="js/addNews.js" type="module"></script>
+</body>
+
+</html>
