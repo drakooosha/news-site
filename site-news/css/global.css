@@ -1,0 +1,71 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: black;
+    background-color: white;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 23px;
+}
+
+.tag--realestate {
+    background-color: #E7C652;
+}
+
+.tag--finance {
+    background-color: #68E082;
+}
+
+.tag--sport {
+    background-color:#609FFF;
+}
+
+.tag--movies {
+    background-color:#F34C4C;
+}
+
+.tag--shops {
+    background-color:#97CC00;
+}
+
+.tag--job {
+    background-color:#FFAD33;
+}
+
+.tag--tv {
+    background-color:#8100E6;
+}
+
+.tag--mail {
+    background-color:#00C8D4;
+}
+
+.tag--weather {
+    background-color:#F15A2A;
+}
+
